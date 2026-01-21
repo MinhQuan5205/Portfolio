@@ -1,0 +1,214 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/******************
+     THEME 
+*******************/
+:root {
+  /*=============== 
+      COLORS (MYSTERIOUS GREEN & BLACK)
+   ================*/
+  /* Primary colors - Tông Xanh Huyền Bí */
+  /* Các màu nhạt (Dùng cho text highlight hoặc hiệu ứng sương mù) */
+  --p-20: hsl(150, 100%, 98%);
+  --p-50: hsl(152, 100%, 96%);
+  --p-100: hsl(152, 100%, 92%);
+  --p-200: hsl(154, 90%, 85%);
+  --p-300: hsl(156, 85%, 75%);
+
+  /* Các màu trung gian (Màu chủ đạo phát sáng) */
+  --p-400: hsl(158, 80%, 60%);
+  --p-450: hsl(160, 100%, 50%); /* Màu xanh neon rực rỡ */
+  --p-500: hsl(155, 90%, 40%); /* Màu xanh ngọc lục bảo đậm */
+  --p-500-code: 155, 90%, 40%;
+
+  /* Các màu đậm (Dùng cho nền và chiều sâu) */
+  --p-600: hsl(152, 85%, 30%);
+  --p-600-code: 152, 85%, 30%;
+  --p-700: hsl(150, 70%, 20%);
+  --p-700-code: 150, 70%, 20%;
+  --p-800: hsl(148, 60%, 15%); /* Xanh rêu tối ám ảnh */
+
+  /* Màu gần như đen (Black - Void) */
+  --p-900: hsl(145, 50%, 10%);
+  --p-900-code: 145, 50%, 10%;
+  --p-950: hsl(145, 60%, 5%); /* Đen thẳm ám xanh */
+  --p-950-code: 145, 60%, 5%;
+
+  /* Neutrals - Trung tính (Chuyển sang ám xanh xám thay vì xanh dương) */
+  --n-50: hsl(150, 10%, 96%);
+  --n-500: hsl(150, 15%, 40%);
+  --n-600: hsl(150, 20%, 25%);
+  --foreground-color: hsl(0, 0%, 100%); /* Giữ nguyên màu trắng cho text */
+
+  /* Gradients - Hiệu ứng chuyển màu */
+  /* Gradient này tạo cảm giác như ánh sáng phát ra từ bóng tối */
+  --main-gradient-color: linear-gradient(to right, var(--p-900), var(--p-500));
+
+  /* Gradient huyền bí: Từ đen ám xanh sang sáng dần */
+  --gradient-color: linear-gradient(var(--p-950) 10%, var(--p-700));
+
+  /*================================= 
+        FONTS -  Sử dụng Scale 1.125
+    =================================*/
+  /* 32px */
+  --h1-font-size: 2rem;
+  /* 36px */
+  --h1-line-height: 2.25rem;
+
+  /* 26px */
+  --h2-font-size: 1.6rem;
+  /* 32px */
+  --h2-line-height: 2rem;
+
+  /* 20px */
+  --h3-font-size: 1.266rem;
+  /* 24px */
+  --h3-line-height: 1.5rem;
+
+  /* 18px */
+  --h4-font-size: 1.125rem;
+  /* 16px */
+  --h4-line-height: 1.5rem;
+
+  /* 16px */
+  --p-font-size: 1rem;
+  /* 24px */
+  --p-line-height: 1.5rem;
+
+  --p-letter-spacing: 0.025rem;
+
+  /* 12px */
+  --caption-font-size: 0.875rem;
+  /* 16px */
+  --caption-line-height: 1rem;
+}
